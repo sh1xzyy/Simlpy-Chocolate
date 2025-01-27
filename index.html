@@ -69,7 +69,11 @@
 						</a>
 					</li>
 				</ul>
-				<button class="header__open-menu-btn" type="button">
+				<button
+					class="header__open-menu-btn"
+					type="button"
+					id="open-mobile-menu"
+				>
 					<svg class="header__open-menu-icon" width="28" height="28">
 						<use href="./images/icons.svg#icon-burger"></use>
 					</svg>
@@ -822,7 +826,9 @@
 							</p>
 						</li>
 					</ul>
-					<button class="reviews__btn" type="button">Leave a review</button>
+					<button class="reviews__btn" type="button" id="open-modal-review-btn">
+						Leave a review
+					</button>
 				</div>
 			</section>
 		</main>
@@ -918,9 +924,9 @@
 
 		<!-- #endregion Footer -->
 		<!-- #region Modal Overlay -->
-		<div class="modal__overlay">
+		<div class="modal__overlay" id="modal-review">
 			<div class="modal">
-				<button class="modal__close-btn" type="button">
+				<button class="modal__close-btn" type="button" id="close-modal-review">
 					<svg class="modal__close-icon">
 						<use href="./images/icons.svg#icon-close"></use>
 					</svg>
@@ -1021,9 +1027,13 @@
 		</div>
 		<!-- #endregion Modal Overlay -->
 		<!-- #region Mobile Menu -->
-		<div class="mobile__menu">
+		<div class="mobile__menu" id="mobile-menu">
 			<div class="container">
-				<button class="mobile__menu-close-btn" type="button">
+				<button
+					class="mobile__menu-close-btn"
+					type="button"
+					id="close-mobile-btn"
+				>
 					<svg class="mobile__menu-close-icon" width="28" height="28">
 						<use href="./images/icons.svg#icon-close"></use>
 					</svg>
@@ -1031,13 +1041,17 @@
 				<nav class="mobile__nav-menu">
 					<ul class="mobile__nav-menu-list">
 						<li class="mobile__nav-list-item">
-							<a href="#" class="mobile__menu-item-link">Home</a>
+							<a href="./index.html" class="mobile__menu-item-link">Home</a>
 						</li>
 						<li class="mobile__nav-list-item">
-							<a href="#" class="mobile__menu-item-link">How it’s made?</a>
+							<a href="#making-process" class="mobile__menu-item-link"
+								>How it’s made?</a
+							>
 						</li>
 						<li class="mobile__nav-list-item">
-							<a href="#" class="mobile__menu-item-link">Chocolate is loved</a>
+							<a href="#reviews" class="mobile__menu-item-link"
+								>Chocolate is loved</a
+							>
 						</li>
 					</ul>
 				</nav>
@@ -1067,5 +1081,6 @@
 			</div>
 		</div>
 		<!-- #endregion Mobile Menu -->
+		<script src="./js/main.js" defer></script>
 	</body>
 </html>

@@ -728,7 +728,7 @@ img {
 	transition: opacity 250ms linear;
 }
 
-.modal__overlay.is__open {
+.modal__overlay.is-open {
 	opacity: 1;
 	pointer-events: auto;
 }
@@ -938,7 +938,7 @@ img {
 		transition: transform 250ms linear;
 	}
 
-	.mobile__menu.is__open {
+	.mobile__menu.is-open {
 		transform: translateX(0%);
 	}
 
