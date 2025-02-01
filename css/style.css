@@ -1442,3 +1442,20 @@ img {
 	}
 }
 /* #endregion Media Hero Pictures*/
+/* #region Scroll To Top Btn */
+.scroll__to-top {
+	position: fixed;
+	right: 50px;
+	bottom: -50px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #fd9222;
+	border-radius: 50%;
+	fill: #fd9222;
+	background-color: #111111;
+	transition: bottom 500ms linear;
+}
+.scroll__to-top.is-active {
+	bottom: 50px;
+}
+/* #endregion Scroll To Top Btn */
